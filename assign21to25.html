@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 21-25</title>
+</head>
+<body>
+    <script>
+        //Q1 and 6
+    var firstName = prompt("What's your first name?")
+    var lastName = prompt("What's your last name?")
+    var fullName = alert(firstName +" " + lastName);
+
+        //Q2
+    var mobile = prompt("Whats your favourite phone?") 
+    var favPhone = alert(mobile.length)
+
+        //Q3 and 4 same, to 5
+    var str = "Pakistani"
+    console.log("index of 'n' is: " + " " + str.indexOf("n"));
+    console.log("Character at index 3:" +" " + str.charAt(3)) ;
+           
+        //Q7
+    var str = "hyderabad"
+    console.log('after replacement:' +' ' + str.replace('hydera','Islama'))         
+        
+        //Q8
+    var message = "Ali and Sami are best friend.They play cricket and football together."
+    console.log(message.replaceAll('and','&'))    
+    
+        // Q9
+    var str = "478"
+    console.log(+'478')    
+        
+        //Q10
+    var dryFruits = prompt('Any dryfruit')  
+    console.log(dryFruits.toUpperCase());
+
+        //Q11
+        //Q12
+    var num = parseInt(33.69)
+    var num1 = num.toString();   
+   
+        //Q13
+    var userName = prompt('Enter username?');    
+    if (/[@.,!]/.test(userName)) {
+      alert('enter valid userName');
+    };
+
+       //Q14
+    var fruits = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+    var userInput = prompt('order?');
+    var index = fruits.indexOf(userInput);
+    if (index === -1) {
+       alert('We are sorry.This item is not available');
+    } else {
+       alert('available at index ' + index);
+    };   
+
+
+    </script>
+</body>
+</html>
