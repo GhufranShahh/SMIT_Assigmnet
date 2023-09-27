@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 6-9</title>
+</head>
+<body>
+    <script>
+        //Q1
+        var num = 10;
+        document.write('Result:');
+        document.write('<br>');
+        document.write('The value of a is: '+num);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('------------------------------------');
+        document.write('<br>');
+        document.write('<br>');
+        num++;
+        document.write('The value of ++a is: '+num);
+        document.write('<br>');
+        document.write('Now the value of a is: '+num);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('The value of ++a is: '+num);
+        document.write('<br>');
+        num++;
+        document.write('Now the value of a is: '+num);
+        document.write('<br>');
+        document.write('<br>');
+        num--;
+        document.write('The value of --a is: '+num);
+        document.write('<br>');
+        num++;
+        document.write('Now the value of a is: '+num);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('The value of --a is: '+num);
+        document.write('<br>');
+        num--;
+        document.write('Now the value of a is: '+num);
+        document.write('<br>');
+        //Q2
+        var a = 2;
+        var b = 1;
+        document.write('A is: '+a);
+        document.write('<br>');
+        document.write('B is: '+b);
+        document.write('<br>');
+        var result = --a - --b + ++b + b--;
+        document.write('The Result is: '+result); 
+        document.write('<br>');
+        //Q3
+        var name = prompt('Enter Your name here:');
+        document.write('Hello: '+name);
+        document.write('<br>');
+        //Q4
+        //Q5
+        var inputNumber = prompt('Enter a number to print table:');
+        if(inputNumber == null )
+        {
+            for(var i =1; i<=10; i++)
+        {
+          document.write('5 '+' X' +i+ ' =' + i* 5);
+          document.write('<br>');
+        }
+        }
+        else
+        for(var i =1; i<=10; i++)
+        {
+          document.write(inputNumber+' X' +i+ ' =' + i* inputNumber);
+          document.write('<br>');
+        }
+        //Q6
+        var sub1 = prompt('Enter the 1st subject name: ');
+        var sub2 = prompt('Enter the 2nd subject name: ');
+        var sub3 = prompt('Enter the 3rf subject name: ');
+        var totalMarkforSubject1 = 100;
+        var totalMarkforSubject2 = 100;
+        var totalMarkforSubject3 = 100;
+        var obtMark1 = parseInt(prompt('Enter the obtain marks you got in 1st subject: '));
+        var obtMark2 = parseInt(prompt('Enter the obtain marks you got in 2st subject: '));
+        var obtMark3 = parseInt(prompt('Enter the obtain marks you got in 3st subject: '));
+        var totalMarks = totalMarkforSubject1 + totalMarkforSubject2 +totalMarkforSubject3;
+        var obtTotalMarks = obtMark1 + obtMark2 + obtMark3;
+        var totalPercentage = obtTotalMarks / totalMarks * 100;
+        var percentageForSub1 = obtMark1 / totalMarkforSubject1 * 100;
+        var percentageForSub2 = obtMark2 / totalMarkforSubject2 * 100;
+        var percentageForSub3 = obtMark3 / totalMarkforSubject3 * 100;
+        document.write('Subject   Total Marks   Obtained Marks   Percentage');
+        document.write('<br>');
+        document.write(sub1+  '        ' +totalMarkforSubject1+  '       '  +obtMark1+ '       '   +percentageForSub1+'%');
+        document.write('<br>');
+        document.write(sub2+  '        ' +totalMarkforSubject2+  '       '  +obtMark2+ '       '   +percentageForSub2+'%');
+        document.write('<br>');
+        document.write(sub3+  '        ' +totalMarkforSubject3+  '       '  +obtMark3+ '       '   +percentageForSub3+'%');
+        document.write('<br>');
+        document.write( '        ' +totalMarks+  '       '  +obtTotalMarks+ '       '   +totalPercentage+'%');
+        document.write('<br>');
+    </script>
+</body>
