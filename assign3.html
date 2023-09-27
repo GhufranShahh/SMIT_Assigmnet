@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="task"></div>
+
+    <script>//ASSIGNMENT #3
+
+        //Question #1
+         var age="I am 21 years old"
+         alert(age)
+        
+        //Question#2
+         var VisitCount= +localStorage.getItem("VisitCount");
+         VisitCount=VisitCount+1;
+         localStorage.setItem("VisitCount",VisitCount);
+         alert("You have visited this page" +VisitCount+ "times.")
+        
+         //Question#3
+         var taskDiv= document.getElementById("task");
+         taskDiv.innerHTML="My birthday year is 1990 \n Data type of my declare variable is number"
+        </script>
+</body>
+</html>
