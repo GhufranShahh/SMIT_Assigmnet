@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Q1
+    function rightNow(){
+        var now = new Date();
+        console.log(now)
+    }
+    rightNow();
+
+      //Q2
+    function fullName(firstName ,lastName){
+        var fullName = firstName + " " + lastName
+        console.log(fullName)
+    }  
+    fullName("Ghufran", "Shah");
+     
+     //Q3
+    function add(a,b){
+        var addition = a + b ;
+        console.log(addition);
+    }
+    add(5 , 9)
+      
+      //Q4 (calculator)
+    function oper(num1, num2, char ){
+        if(char === '+'){
+            document.write('The additions of ${num1} and ${num2} is ${num1 + num2}'); 
+        }else if(char === '*'){
+            document.write('the multiple of ${num1} and ${num2} is ${num1 * num2}');
+        }else if (char === '-'){
+            document.write('the substraction of ${num1} and ${num2} is ${num1 - num2}');
+        }else {
+            document.write('the division of ${num1} and ${num2} is ${num1 / num2}');
+        }
+    }
+    var number1 = +prompt('Enter the first no.');
+        var number2 = +prompt('Enter the second no.');
+        var character = prompt('Enter the operator for ex(+,-,*,/).');
+        oper(number1, number2, character);
+        document.write('<br>')
+
+        //Q5
+        function noSuqares(num1) {
+            document.write(`The square of ${num1} is ${num1*num1}`);
+        }
+        noSuqares(4); 
+        document.write('<br>')
+        
+        //Q6
+    function factorial(number){
+        if(number < 0){
+            document.write('Error! Factorial for negative number does not exist');
+        }else if(number === 0){
+            document.write('The factorial of ${number} is 1');
+        }
+        else{
+            let fact = 1;
+            for(i =1 ;i<= number; i++){
+                fact *= i
+            }
+            document.write('The factorial of ${number} is ${fact}')
+        }
+    }     
+    var number = parseInt(+prompt('Enter the positive number?'));
+    factorial();
+    document.write('<br>')
+
+    
+    //Q7
+function counting(num,num3){
+    //let count = 0
+    for(i = 1; i <= 10 ; i++){
+        document.write(i)
+    }
+}
+var num = +prompt("Enter starting number");
+var num3 = +prompt("Enter last number?")
+counting();
+document.write('<br>')
+
+
+ 
+
+
+
+
+    </script>
+</body>
+</html>
