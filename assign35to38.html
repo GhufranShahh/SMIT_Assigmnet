@@ -48,7 +48,7 @@
 
         //Q5
         function noSuqares(num1) {
-            document.write(`The square of ${num1} is ${num1*num1}`);
+            document.write('The square of ${num1} is ${num1*num1}');
         }
         noSuqares(4); 
         document.write('<br>')
@@ -56,7 +56,7 @@
         //Q6
     function factorial(number){
         if(number < 0){
-            document.write('Error! Factorial for negative number does not exist');
+            document.write('Error! Fac(torial for negative number does not exist');
         }else if(number === 0){
             document.write('The factorial of ${number} is 1');
         }
@@ -85,6 +85,125 @@ var num3 = +prompt("Enter last number?")
 counting();
 document.write('<br>')
 
+     //Q8
+     function calculateHypotenus(base,perpendicular){
+        function calculateSquare(x){
+            return x*x
+        }
+        var baseSquare = calculateSquare(base);
+        var perpendicularsquare = calculateSquare(perpendicular);
+        var hypotenus = baseSquare + perpendicularsquare;
+        var hypotenusSquare = Math.sqrt(hypotenus);
+        return hypotenusSquare ;
+     }
+     var result = calculateHypotenus(3.0,4.0);
+     document.write(`The hypotenuse of the right-angled triangle is ${result.toFixed(1)}`);
+     document.write('<br>')
+
+     //Q9
+    function areaOfRectangle(width,height){
+        area = width*height ;
+        return area ;
+    }
+    var FirstNumber = +prompt('Write width');
+    var SecondNumber = +prompt('write height ?');
+    var result = areaOfRectangle(2,5);
+    document.write(`The area of rectangle is ${result}.`);
+    document.write('<br>');
+
+
+       //Q10
+       function palindrome(checkWord) {
+            var checkLenght = checkWord.length;
+            for(var i=0; i<=checkLenght/2; i++)
+            {
+                if(checkWord[i] !== checkWord[checkLenght - 1 -i]){
+                    return false;
+                }
+            }
+            return true;
+        }
+        var result = palindrome('madam');
+        if(result === true){
+            document.write('Yes its palindrome word.');
+        }else{
+            document.write('Its not a palindrome word.');
+        };
+        document.write('<br>');
+
+
+        //Q11
+        function upperCase(str){
+            var array1 = str.split(' ');
+            var newArray = []
+            for( var x =0 ; x < array1.length ; x++){
+                newArray.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+            }
+            return newArray.join(' ')
+        }
+        var result = upperCase('the quick brown fox')
+        document.write(result);
+        document.write('<br>');
+
+        //Q12
+        function stringAs(valueInString){
+            var splitString = valueInString.split(' ');
+            for(var i=0; i<=splitString.length; i++){
+                if(splitString[0].length > splitString[1].length){
+                    return splitString[0];
+                }
+                else if(splitString[1].length>splitString[2].length){
+                    return splitString[1];
+                }
+                else{
+                    return splitString[2];
+                }
+            }
+        }
+        var result = stringAs('Web Development Tutorial');
+        document.write(result);
+        document.write('<br>');
+
+        //Q13
+        function noOfOcurrences(string,letterToCheckOccurence){
+            var counter =0;
+            string = string.toLowerCase();
+            for(var i=0; i<=string.length; i++){
+                if(string[i] === letterToCheckOccurence){
+                    counter +=1;
+                }
+            }
+            return counter;
+        }
+        var result = noOfOcurrences('JSResources.com','r');
+        document.write(`The no of occurence is: ${result}`);
+        document.write('<br>');
+
+        //Q14 
+        function calcCircumference(radius){
+            var pie = 3.14
+            var circumferenceOfCircle = 2*pie*radius
+            return circumferenceOfCircle
+        }
+        function calcArea(radius){
+            var radiusSqaure = radius*radius
+            var pie = 3.14
+            var areaOfCircle = 2*pie*radiusSqaure
+            return areaOfCircle
+        }
+        var result1 = calcCircumference(4.0);
+        document.write(`The circumference is: ${result1}`); 
+        document.write('<br>');
+        
+        var result2 = calcArea(.0);
+        document.write(`The area is: ${result2}`);
+
+
+
+    
+         
+
+
 
  
 
@@ -93,4 +212,4 @@ document.write('<br>')
 
     </script>
 </body>
-</html>
+</html>[]
